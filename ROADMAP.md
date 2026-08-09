@@ -154,4 +154,3 @@ WFM Assistant aims to continue evolving as a centralized Workforce Management op
 - ✅ Operational workflow automation
 - ✅ GitHub-based release management
 
-Last Updated: October 2025
