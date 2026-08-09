@@ -6,10 +6,6 @@ WFM Assistant streamlines daily operational activities by providing a centralize
 
 Over time, the platform has evolved through more than 200 production deployments into a comprehensive operational toolkit supporting a wide range of workforce management functions.
 
-https://img.shields.io/github/v/release/Mkhimer69/WFM-Assistant
-https://img.shields.io/badge/platform-Google%20Apps%20Script-blue
-https://img.shields.io/badge/status-active-success
-
 ---
 
 ## Overview
