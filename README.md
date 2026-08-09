@@ -17,6 +17,23 @@ WFM Assistant was developed to reduce manual effort, standardize operational wor
 The application combines multiple operational utilities into a single interface, allowing teams to perform common activities without switching between several tools and spreadsheets.
 
 ---
+## Project History
+
+WFM Assistant started as a simple operational dashboard and gradually evolved through 200+ production deployments into a comprehensive Workforce Management toolkit.
+
+Major phases included:
+
+- Workforce communication tools
+- Flex management automation
+- Agent lookup services
+- Webex integrations
+- Verint automation
+- Intraday reporting
+- AHOD management
+- HC approval workflows
+- GitHub-driven feedback processes
+
+The project continues to evolve based on operational needs and end-user feedback.
 
 ## Features
 
