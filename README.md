@@ -94,11 +94,14 @@ flowchart LR
 
 | Version | Highlights |
 |---|---|
-| **v3.0.0** | Workflow Simplification Update |
-| v2.5.0 | <!-- TODO: one line --> |
-| v1.8.0 | <!-- TODO: one line --> |
-| v1.5.0 | <!-- TODO: one line --> |
-| v1.0.0 | Initial Workforce Operations Dashboard |
+| **v3.0.0** — Workflow Simplification | 🆕 **HC Approval Generator** (Slack-ready, CST/Egypt/IST conversion, clock emoji, one-click copy) · UI refresh & faster workflows · dashboard reorganization · improved AHOD experience · removed legacy utilities & orphanage workflow |
+| **v2.5.0** — Operations Toolkit | 🆕 **AHOD Management** (session logging, queue monitoring, live sync) · **Agent Finder** (agent/manager lookup, PTO visibility) · **Communication Hub** (canned responses, templates) · outage reporting & import utilities |
+| **v1.8.0** — Reporting Center | 🆕 **Intraday Reporting** (agent/TM/LOB productivity, AUX hours, shrinkage) · **Ultimate Report** (drill-down, advanced filtering, XLSX export) · **URP** (weekly reporting, event tracking, waste analysis) — transformed the app from a utility dashboard into a reporting platform |
+| **v1.5.0** — Communications & Automation | 🆕 **Webex automation** (room notifications, Adaptive Cards, OOA reporting) · **Gmail processing** (automated report ingestion) · faster operational updates |
+| **v1.0.0** — Initial Dashboard | Workforce operations dashboard · flex management workflows · queue movement support · communication templates · Google Sheets integration |
+
+> The project has evolved through **200+ production deployments** — from a single
+> dashboard to a full operations toolkit — guided by user feedback at every step.
 
 ## 🔮 Roadmap
 In-app release notes · additional reporting dashboards · enhanced AHOD analytics ·
