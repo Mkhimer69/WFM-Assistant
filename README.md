@@ -1,372 +1,120 @@
-# WFM Assistant
+# 📊 WFM Assistant
 
-A productivity and operations platform built for Workforce Management (WFM) and Real-Time Operations teams.
+<p align="center">
+  <img src="https://img.shields.io/badge/production%20deployments-200%2B-brightgreen?style=flat">
+  <img src="https://img.shields.io/github/v/release/Mkhimer69/WFM-Assistant?style=flat&label=latest">
+  <img src="https://img.shields.io/badge/operational%20modules-12-blue?style=flat">
+  <img src="https://img.shields.io/badge/built%20with-Google%20Apps%20Script-4285F4?style=flat">
+  <img src="https://img.shields.io/badge/status-actively%20maintained-2ea44f?style=flat">
+</p>
 
-WFM Assistant streamlines daily operational activities by providing a centralized workspace for workforce planning, operational reporting, agent management, communication workflows, queue management, scheduling support, and process automation.
+> A centralized operations platform for **Workforce Management (WFM)** and
+> **Real-Time Operations** teams — reporting, planning, agent lookup, AHOD
+> management, and communications, in one workspace instead of ten tabs.
 
-Over time, the platform has evolved through more than 200 production deployments into a comprehensive operational toolkit supporting a wide range of workforce management functions.
+| 📈 At a glance | |
+|---|---|
+| Production deployments | **200+** |
+| Development span | Multi-year, actively maintained |
+| Operational modules | Reporting · Verint automation · AHOD · Agent Finder · HC planning · Outages · Communications · Webex · Gmail · Webex cards · Dashboard · Analytics |
+| Integrations | Slack · Webex · Gmail · Verint · Google Sheets |
+| Latest release | **v3.0.0** — Workflow Simplification Update |
 
----
+## 🧭 Contents
+[Problem](#-the-problem) · [Solution](#-the-solution) · [Modules](#-module-map) · [Flagship features](#-flagship-features) · [Architecture](#-architecture) · [Releases](#-release-history) · [Notice](#-confidentiality--portfolio-notice)
 
-## Overview
+## 🧩 The Problem
 
-WFM Assistant was developed to reduce manual effort, standardize operational workflows, and improve day-to-day efficiency for Workforce Management and Real-Time Analyst teams.
+WFM and RTA analysts live in fragmentation: intraday metrics in one tool, schedules
+in Verint, approvals over Slack, agent data across spreadsheets, AHOD tracked by hand.
+Every task meant switching tools, reformatting data, and hoping nothing drifted
+out of sync — slow, error-prone, and dependent on who knew where things lived.
 
-The application combines multiple operational utilities into a single interface, allowing teams to perform common activities without switching between multiple tools, spreadsheets, and reporting systems.
+## ✅ The Solution
 
----
+WFM Assistant consolidates the daily operational surface into a single interface:
 
-## Project History
+- **Report once, automatically** — intraday, productivity, and shrinkage reporting
+  generated from raw workforce data, no spreadsheets touched
+- **Look up anyone, instantly** — agents, managers, PTO, and flex info from one search
+- **Run the day** — AHOD tracking, queue flexing, HC requests, outage comms
+- **Communicate in-format** — Slack/Webex-ready messages with one-click copy
 
-WFM Assistant started as a simple operational dashboard and gradually evolved through more than **200 production deployments** into a comprehensive Workforce Management toolkit.
+## 🗺 Module Map
 
-Major phases of development included:
+| Module | What it does |
+|---|---|
+| 📈 **Workforce Reporting Platform** | Intraday, Ultimate Report (UR) & Ultimate Report Plus (URP) — dynamic generation, XLSX export, filtering, time-unit conversion, historical analytics |
+| ⚙️ **Verint Automation Suite** | Schedule import, shrinkage extraction, attendance & productivity aggregation across multiple LOBs |
+| 🧮 **Workforce Analytics Engine** | Automated pipelines: aggregation, trending, daily analytics, spreadsheet population, error recovery |
+| 🏠 **AHOD Management** | Activation, removal, session tracking, queue-level visibility, audit logs, live sync |
+| 🔎 **Agent Finder** | Agent/manager lookup, PTO & flex visibility, workforce mapping, multi-source search |
+| 📋 **HC Planning & Queue Flexing** | Queue movement announcements, capacity & buffer-HC requests, staffing comms |
+| ✍️ **HC Approval Generator** | Slack-ready approvals with automatic CST / Egypt / IST time conversion & clock emoji |
+| 🚨 **Outage Management** | Outage submission, time capture, impact communication, reporting support |
+| 💬 **Communication Hub** | Canned responses, operational templates, one-click copy |
+| 📧 **Email & File Automation** | Gmail ingestion, attachment processing, automated report imports & cleanup |
+| 🤖 **Webex Automation** | Adaptive Card messaging, OOA reporting, manager summaries, team notifications |
+| 🖥 **Operational Dashboard** | The single interface tying everything together |
 
-- Workforce communication tools
-- Flex management automation
-- Agent lookup services
-- Webex integrations
-- Verint automation
-- Intraday reporting
-- AHOD management
-- HC approval workflows
-- Reporting and analytics platforms
-- GitHub-driven feedback processes
+## 🚀 Flagship Features
 
-The project continues to evolve based on operational requirements, user feedback, and process improvement opportunities.
-
----
-
-## Features
-
-### Workforce Reporting Platform
-
-One of the largest components of WFM Assistant is its reporting framework, designed to automate workforce reporting and eliminate manual spreadsheet processing.
-
-#### Intraday Reporting
-
-- Agent Productivity View
-- Team Manager Productivity View
-- LOB Productivity View
-- AUX Hours Analysis
-- Shrinkage Reporting
-- Activity Breakdown Reporting
-- Scheduled vs Actual Metrics
-- Workforce Trend Analysis
-
-#### Ultimate Report (UR)
-
-A centralized reporting engine that processes workforce data and generates operational insights.
-
-Features include:
-
-- Dynamic report generation
-- XLSX export
-- Column sorting
-- Interactive filtering
-- Time-unit conversion
-- Productivity reporting
-- Workforce analytics
-
-#### Ultimate Report Plus (URP)
-
-An advanced reporting framework supporting historical analysis and operational reporting.
-
-Features include:
-
-- Date-range reporting
-- Weekly reporting
-- Agent-level productivity analysis
-- Shrinkage analysis
-- Event tracking
-- Waste tracking
-- Historical workforce reporting
-
----
-
-### Verint Automation Suite
-
-Automated processing of Verint exports and workforce scheduling data.
-
-Capabilities include:
-
-- Schedule import automation
-- Workforce activity processing
-- Shrinkage extraction
-- Schedule analytics
-- Attendance analysis
-- Productivity aggregation
-- Multi-LOB workforce reporting
-
----
-
-### Workforce Analytics Engine
-
-Automated data processing pipelines that transform raw workforce data into actionable operational reporting.
-
-Capabilities include:
-
-- Workforce data aggregation
-- Query automation
-- Historical trending
-- Daily analytics generation
-- Automated spreadsheet population
-- Data validation
-- Error recovery workflows
-
----
+### Reporting Platform (UR / URP)
+The largest component — automates workforce reporting end-to-end:
+intraday productivity (agent / TM / LOB views), AUX hours, shrinkage,
+scheduled-vs-actual, trend analysis; plus historical date-range and weekly
+reporting with event & waste tracking.
 
 ### AHOD Management System
-
-A centralized AHOD tracking system used by Workforce Management teams.
-
-Features include:
-
-- AHOD activation
-- AHOD removal
-- Session-based tracking
-- Queue-level visibility
-- Historical audit logs
-- Live synchronization
-
-The AHOD system is also integrated with operational workflows to provide immediate visibility whenever coverage changes occur.
-
----
-
-### Agent Finder
-
-Workforce lookup platform designed to reduce time spent searching across multiple reporting sources.
-
-Features include:
-
-- Agent lookup
-- Team manager lookup
-- PTO visibility
-- Flex information
-- Workforce mapping
-- Multi-source searching
-
----
-
-### HC Planning & Queue Flexing
-
-Workforce planning tools supporting daily operational decision-making.
-
-Features include:
-
-- Queue movement announcements
-- Capacity requests
-- Buffer HC requests
-- Staffing communications
-- Operational planning support
-
----
+Real-time "Agent On Duty" visibility with session tracking, historical audit
+logs, and live synchronization into operational workflows — coverage changes
+are visible the moment they happen.
 
 ### HC Approval Generator
+Turns headcount requests into formatted, timezone-aware Slack messages —
+duration calculation, clock emoji, one-click copy. The little tool agents
+actually thank you for.
 
-Generate Slack-ready HC approval requests with automatic formatting and timezone conversion.
+## 🏗 Architecture
 
-Supported Timezones:
+```mermaid
+flowchart LR
+    A[Operations Analyst] --> B[Operational Dashboard]
+    B --> C[Google Apps Script backend]
+    C --> D[(Google Sheets)]
+    C --> E[(Google Drive)]
+    C --> F[Gmail report ingestion]
+    C --> G[Verint schedule data]
+    C --> H[Webex Adaptive Cards]
+    C --> I[Slack workflows]
+    C --> J[GitHub-hosted config]
+```
 
-- CST
-- Egypt Time
-- IST
+## 📜 Release History
 
-Features include:
+| Version | Highlights |
+|---|---|
+| **v3.0.0** | Workflow Simplification Update |
+| v2.5.0 | <!-- TODO: one line --> |
+| v1.8.0 | <!-- TODO: one line --> |
+| v1.5.0 | <!-- TODO: one line --> |
+| v1.0.0 | Initial Workforce Operations Dashboard |
 
-- Time conversion
-- Duration calculation
-- Slack formatting
-- Automatic clock emoji selection
-- One-click copy functionality
+## 🔮 Roadmap
+In-app release notes · additional reporting dashboards · enhanced AHOD analytics ·
+configurable notification center · user preference profiles · historical trend reporting
 
----
+## 🔒 Confidentiality & Portfolio Notice
 
-### Outage Management
-
-Structured outage communication and tracking workflows.
-
-Features include:
-
-- Outage submission
-- Start/end time capture
-- Location tracking
-- Operational impact communication
-- Workforce reporting support
-
----
-
-### Communication Hub
-
-Tools designed to standardize workforce communication.
-
-Features include:
-
-- Canned responses
-- Operational templates
-- Slack-ready formatting
-- One-click copy
-- Workforce messaging support
+WFM Assistant runs in real production environments. Source code, configuration,
+screenshots, internal report structures, and integration details are **intentionally
+excluded** to protect company data, proprietary workflows, and compliance requirements.
+This repository documents the project's functionality, evolution, architecture, and
+operational impact — nothing more.
 
 ---
 
-### Email & File Automation
-
-Automated ingestion and processing of workforce reports.
-
-Capabilities include:
-
-- Gmail automation
-- Attachment processing
-- Automated report imports
-- Spreadsheet population
-- Cleanup automation
-- Schedule ingestion
-
----
-
-### Webex Automation
-
-Communication automation built for workforce operations.
-
-Features include:
-
-- Automated Webex messaging
-- Adaptive Cards
-- Workforce notifications
-- OOA reporting
-- Manager summaries
-- Team communications
-
----
-
-### Operational Dashboard
-
-The primary interface bringing together workforce operations, reporting, planning tools, communication workflows, and analytics into a single platform.
-
-Capabilities include:
-
-- Workforce operations support
-- Real-time workflow management
-- Planning utilities
-- Reporting access
-- Queue management
-- Operational automation
----
-
-## Tech Stack
-
-### Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-
-### Backend
-
-- Google Apps Script
-
-### Data Sources
-
-- Google Sheets
-- Google Drive
-- Internal Reporting Systems
-- GitHub Hosted Configuration Files
-
-### Integrations
-
-- Slack Workflow Support
-- Webex Automation
-- Gmail Automation
-- Workforce Reporting Data Sources
-
----
-
-## Security & Confidentiality
-
-WFM Assistant was developed to support real-world Workforce Management and Real-Time Operations workflows in a production environment.
-
-To protect organizational data, internal processes, operational reporting structures, and system integrations, screenshots, source code, configuration files, and implementation details are intentionally excluded from this repository.
-
-The repository focuses on documenting the project's functionality, evolution, architecture, and operational impact while ensuring that no confidential information, company-sensitive workflows, credentials, internal reports, or proprietary business logic are disclosed.
-
-This approach allows the project to be showcased as part of a professional portfolio without compromising security, compliance requirements, or organizational data protection standards.
-
----
-
-## Highlights
-
-This project demonstrates:
-
-- Workflow Automation
-- Workforce Management Operations
-- Google Apps Script Development
-- Spreadsheet Automation
-- Operational Process Design
-- Front-End Development
-- Internal Tool Development
-- Real-Time Operations Support
-- Reporting & Analytics Development
-- Process Standardization
-- Business Workflow Automation
-- Enterprise Tool Ownership
-
----
-
-## Project Milestones
-
-- ✅ 200+ Production Deployments
-- ✅ Multi-Year Active Development
-- ✅ Workforce Reporting Platform
-- ✅ Agent Lookup Platform
-- ✅ AHOD Management System
-- ✅ HC Planning & Approval Workflows
-- ✅ Webex Automation Suite
-- ✅ Verint Automation Workflows
-- ✅ Gmail Processing Automation
-- ✅ GitHub Release Management
-
----
-
-## Future Enhancements
-
-- Release notes inside the application
-- Additional reporting dashboards
-- Enhanced AHOD analytics
-- Configurable notification center
-- User preference profiles
-- Expanded operational templates
-- Advanced workforce insights
-- Historical trend reporting
-
----
-
-## Feedback
-
-Bug reports and feature requests are welcome.
-
-Please use:
-
-- **Issues → Bug Report**
-- **Issues → Feature Request**
-
----
-
-## Portfolio Notice
-
-This repository is maintained for portfolio, documentation, release tracking, and project showcase purposes.
-
-The production source code is intentionally not published in order to protect company data, internal workflows, reporting structures, integrations, operational processes, and environment-specific business logic.
-
-No confidential information, credentials, proprietary configurations, internal reports, or sensitive implementation details are included in this repository.
-
----
-
-## Author
-
-**Fathy Mkhimer**  
-Lead Real-Time Analyst
-
-Passionate about Workforce Management, process automation, operational excellence, reporting solutions, and building tools that simplify complex operational workflows.
-
-GitHub: https://github.com/Mkhimer69
+<div align="center">
+<b>📊 WFM Assistant</b><br><i>One workspace for the whole operational day.</i><br><br>
+**Fathy Mkhimer** · Lead Real-Time Analyst · [GitHub](https://github.com/Mkhimer69)
+</div>
