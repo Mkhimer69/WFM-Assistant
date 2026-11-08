@@ -1,4 +1,4 @@
-# 📊 WFM Assistant
+<h1 align="center">📊 WFM Assistant</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/production%20deployments-200%2B-brightgreen?style=flat">
@@ -118,6 +118,8 @@ operational impact — nothing more.
 ---
 
 <div align="center">
+
 <b>📊 WFM Assistant</b><br><i>One workspace for the whole operational day.</i><br><br>
 **Fathy Mkhimer** · Lead Real-Time Analyst · [GitHub](https://github.com/Mkhimer69)
+
 </div>
